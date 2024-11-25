@@ -1,0 +1,720 @@
+/* styles.css */
+/* styles.css */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    background-color: #f9e8e8;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(246, 230, 237);
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  nav {
+    margin-left: auto; /* Push navigation to the right */
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 1000;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #d21990;
+  }
+  
+  .language {
+    margin-left: 20px; /* Space between nav and language */
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .hero {
+    background-image: url('https://wearethecity.com/wp-content/uploads/2022/02/Portrait-of-four-young-women-with-different-skin-types.-Diverse-group-of-females-standing-together-and-looking-at-camera-beauty-industry.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .hero-text{
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 95%;
+  }
+  .hero-text h1 {
+    font-size: 48px;
+    margin: 276px 0 20px;
+  }
+  
+  .hero-text .btn {
+    background-color: #d21990;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+/* styles.css */
+
+/* Products Section */
+.products {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f9f9f9; /* Light background */
+}
+
+.products h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #4e0434;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  margin-bottom: 30px;
+  background: linear-gradient(to right, #d21990, #f66f99);
+  -webkit-background-clip: text; 
+  background-clip: text;      
+  -webkit-text-fill-color: transparent; 
+}
+
+
+/* Decorative Underline */
+.products h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(to right, #d21990, #f66f99);
+  border-radius: 2px;
+}
+
+/* Categories */
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Spacing between categories */
+}
+
+.category {
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category p {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.category:hover img {
+  transform: scale(1.05); /* Zoom-in effect */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.category:hover p {
+  color: #d21990; /* Change text color on hover */
+}
+
+/* Skincare Analysis Section */
+.skincare-analysis {
+  background-color: #4c002e; /* Dark purple */
+  color: white;
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.analysis-banner {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.analysis-content {
+  flex: 1;
+}
+
+.analysis-content h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.analysis-content p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.analysis-content button {
+  background-color: white;
+  color: #4c002e;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.analysis-content button:hover {
+  background-color: #d21990;
+  color: white;
+}
+
+.analysis-image {
+  flex: 1;
+  position: relative;
+}
+
+.analysis-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.qr-code {
+  position: absolute;
+  bottom: 10px;
+  right: 620px;
+  width: 100px;
+  height: 100px;
+}
+
+/* Best Sellers Section */
+.best-sellers {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.best-sellers h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #4c002e;
+  margin-bottom: 30px;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.product {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 240px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.product:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-name {
+  font-weight: bold;
+  color: #4c002e;
+  margin-bottom: 10px;
+}
+
+.product-desc {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-weight: bold;
+}
+
+/* New In Section */
+.new-in {
+  padding: 40px 20px;
+  background-color: #4c002e;
+  color: white;
+  text-align: center;
+}
+
+.new-in h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.new-in-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.feature-product {
+  flex: 1;
+  max-width: 400px;
+  text-align: left;
+}
+
+.feature-product img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.feature-details h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.feature-details p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.new-products {
+  display: flex;
+  gap: 20px;
+}
+
+.product-card {
+  background-color: white;
+  color: #4c002e;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 220px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card img {
+  max-width: 100%;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-card h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-weight: bold;
+  color: #d21990;
+}
+
+/* Special Offers Section */
+.special-offers {
+  padding: 40px 20px;
+  background-color: #c4b5b5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.offer-banner {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.offer-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.offer-details {
+  flex: 1;
+  text-align: left;
+}
+
+.offer-details h3 {
+  font-size: 22px;
+  color: #4c002e;
+}
+
+.offer-details h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fffafd;
+  margin-bottom: 15px;
+}
+
+.offer-details button {
+  background-color: #4c002e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.offer-details button:hover {
+  background-color: #d21990;
+}
+
+/* Our Brand Section */
+.our-brand {
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.brand-container {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.brand-details {
+  flex: 1;
+  text-align: left;
+}
+
+.brand-details h3 {
+  font-size: 22px;
+  color: #4c002e;
+  margin-bottom: 10px;
+}
+
+.brand-details p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.brand-details button {
+  background-color: #4c002e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.brand-details button:hover {
+  background-color: #d21990;
+}
+
+.brand-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Blog Section */
+.blog-section {
+  text-align: center;
+  margin: 10px 10px;
+  background-color: #ffc3d6;
+  padding: 33px 30px;
+  border: 5px;
+}
+.blog-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.blog-section .view-all {
+  font-size: 1rem;
+  color: #c03c91;
+  text-decoration: none;
+}
+.blog-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.blog-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  max-width: 300px;
+  text-align: left;
+}
+.blog-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+.blog-card h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+.blog-card .metadata {
+  font-size: 0.9rem;
+  color: #666;
+}
+.blog-card .description {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Brand Values Section */
+.brand-values {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+.brand-values .icon-item {
+  text-align: center;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Footer */
+.footer {
+  background: #3c003c;
+  color: #fff;
+  padding: 40px 20px;
+}
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.footer-column h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+.footer-column ul li a {
+  color: #c9a6c9;
+  text-decoration: none;
+}
+.footer-column form {
+  display: flex;
+  flex-direction: column;
+}
+.footer-column form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.footer-column form button {
+  background-color: #c03c91;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.social-icons a {
+  color: #fff;
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+.footer-bottom a {
+  color: #c03c91;
+  text-decoration: none;
+}
+
+.hamburger{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; /* Show hamburger icon on mobile */
+    cursor: pointer;
+    font-size: 24px;
+  }
+
+  .nav-links {
+    display: none; /* Hide navbar links by default */
+    flex-direction: column; /* Stack links vertically */
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.show {
+    display: flex; /* Show navbar links when toggled */
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links li {
+    margin: 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .nav-links a {
+    padding: 15px 0;
+    color: #333;
+    display: block;
+  }
+
+  .nav-links a:hover {
+    background-color: #eee;
+  }
+}
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    height: 400px; /* Reduce hero section height for mobile */
+  }
+
+  .hero-text h1 {
+    font-size: 24px; /* Smaller font size for headings */
+  }
+
+  .categories {
+    flex-direction: column;
+    gap: 20px; /* Adjust spacing */
+  }
+
+  .category img {
+    width: 100%; /* Full width for category images */
+    max-width: 300px; /* Prevent excessive stretching */
+  }
+
+  .skincare-analysis {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .analysis-content {
+    margin-bottom: 20px; /* Add spacing */
+  }
+
+  .carousel {
+    flex-direction: column;
+  }
+
+  .product {
+    width: 100%; /* Full width for products */
+    max-width: 300px; /* Prevent excessive stretching */
+  }
+
+  .new-products {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .special-offers {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .offer-image img {
+    width: 100%; /* Full width for images */
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-column {
+    margin-bottom: 20px;
+  }
+}
